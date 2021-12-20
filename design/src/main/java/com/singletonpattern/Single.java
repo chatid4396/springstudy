@@ -13,12 +13,11 @@ public class Single {
 
     public static Single newInstance() {
         return SingleClass.single;
-//        ExcelWriter excelWriter = EasyExcel.write("fileName").build();
 
 
     }
 
     private static class SingleClass {
-        private static Single single = new Single();
+        private static final Single single = new Single();
     }
 }
